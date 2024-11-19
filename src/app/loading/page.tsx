@@ -1,3 +1,5 @@
+import { Header } from "@/components/Header";
+
 type User = {
   id: number,
   name: string
@@ -12,13 +14,16 @@ export default async function Home() {
   console.log(users);
   
   return (
-    <div className="m-4">
-      <h1 className="text-lg font-bold">ユーザ一覧</h1>
-      <ul>
-        {users.map((user: User) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <Header />
+      <div className="m-4">
+        <h1 className="text-lg font-bold">ユーザ一覧</h1>
+        <ul>
+          {users.map((user: User) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
