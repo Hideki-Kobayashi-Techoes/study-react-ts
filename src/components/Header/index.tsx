@@ -3,6 +3,7 @@ import Link from "next/link";
 const NAV_ITEMS = [
   {href: "/", label: "Index"},
   {href: "/about", label: "About"},
+  {href: "/test", label: "Test"},
 ]
 
 export function Header() {
