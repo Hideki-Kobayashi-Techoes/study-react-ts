@@ -9,9 +9,10 @@ export default async function Home() {
   // 3秒待機
   await new Promise((resolve) => setTimeout(resolve, 3000));
   // ユーザ一覧を取得（前述のroute.jsで作ったAPIエンドポイントを叩く）
-  const response = await fetch('http://localhost:3000/users');
+  const response = await fetch('http://localhost:3000/users').catch(() => {
+    return new Response(JSON.stringify([{"id":1,"name":"山田 太郎"},{"id":2,"name":"佐藤 次郎"}]))
+  })
   const users = await response.json();
-  console.log(users);
   
   return (
     <>

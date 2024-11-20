@@ -5,7 +5,6 @@ const NAV_ITEMS = [
   {href: "/about", label: "About"},
   {href: "/test", label: "Test"},
   {href: "/loading", label: "Loading"},
-  {href: "/error", label: "Error"},
 ]
 
 export function Header() {
