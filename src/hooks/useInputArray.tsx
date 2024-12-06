@@ -4,7 +4,7 @@ export function useInputArray() {
   const [text, setText] = useState<string>("")
   const [array, setArray] = useState<string[]>([])
 
-  const handleChange = useCallback((e :React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value.trim())
   }, [])
 

@@ -12,7 +12,7 @@ export default function Home() {
         <p>Counter Page</p>
         <p>カウンター</p>
         <div className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-          {isShow ? count : null}
+          {isShow && count}
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <button
