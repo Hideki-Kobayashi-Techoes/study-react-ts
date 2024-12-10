@@ -1,12 +1,5 @@
+import { NAV_ITEMS } from "@/lib/nav_items";
 import Link from "next/link";
-
-const NAV_ITEMS = [
-  {href: "/", label: "Index"},
-  {href: "/about", label: "About"},
-  {href: "/counter", label: "Counter"},
-  {href: "/input", label: "Input"},
-  {href: "/loading", label: "Loading"},
-]
 
 export function Header() {
   return (
